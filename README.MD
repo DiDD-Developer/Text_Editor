@@ -1,0 +1,1 @@
+This is text editor for edit the text content and save it in TXT, DOCX or PDF format.
