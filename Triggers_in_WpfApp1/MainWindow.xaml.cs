@@ -284,12 +284,17 @@ namespace Triggers_in_WpfApp1
             {
                 string fileName = saveFileDialog.FileName;
                 string fontFamily = string.Empty;
+                double fontSize = 12; // Установим значение по умолчанию
 
-                double fontSize = 12;
-                fontSize = double.Parse(((ComboBoxItem)FontSizeComboBox.SelectedItem).Content.ToString());
+                // Проверяем, выбран ли элемент в ComboBox перед попыткой доступа к свойствам
+                if (FontSizeComboBox.SelectedItem != null)
+                {
+                    fontSize = double.Parse(((ComboBoxItem)FontSizeComboBox.SelectedItem).Content.ToString());
+                }
+
                 bool isItalic = ItalicCheckBox.IsChecked == true;
                 bool isBold = BoldCheckBox.IsChecked == true;
-                bool isUnderline = DeleteCheckBox.IsChecked == true; // Проверяем, выбран ли чекбокс подчеркивания
+                bool isUnderline = DeleteCheckBox.IsChecked == true;
 
                 if (DeleteCheckBox.IsChecked == true)
                 {
@@ -312,7 +317,7 @@ namespace Triggers_in_WpfApp1
                     fontFamily = "Arial";
                 }
 
-                SaveAsDocx(TextBox1.Text, fileName, fontFamily, fontSize, isItalic, isBold, isUnderline); // Передаем isUnderline в качестве аргумента
+                SaveAsDocx(TextBox1.Text, fileName, fontFamily, fontSize, isItalic, isBold, isUnderline);
                 MessageBox.Show("Файл успешно сохранен как DOCX.");
             }
         }

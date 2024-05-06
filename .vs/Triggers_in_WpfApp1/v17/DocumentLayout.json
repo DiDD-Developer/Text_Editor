@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u043F\u043A\\Downloads\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\",
+  "WorkspaceRootPath": "C:\\Users\\\u043F\u043A\\Downloads\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{146C4C58-9621-4AA4-8C51-D94F6350BC63}|Triggers_in_WpfApp1\\Triggers_in_WpfApp1.csproj|C:\\Users\\\u043F\u043A\\Downloads\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\triggers_in_wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{146C4C58-9621-4AA4-8C51-D94F6350BC63}|Triggers_in_WpfApp1\\Triggers_in_WpfApp1.csproj|solutionrelative:triggers_in_wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{146C4C58-9621-4AA4-8C51-D94F6350BC63}|Triggers_in_WpfApp1\\Triggers_in_WpfApp1.csproj|C:\\Users\\\u043F\u043A\\Downloads\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\triggers_in_wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146C4C58-9621-4AA4-8C51-D94F6350BC63}|Triggers_in_WpfApp1\\Triggers_in_WpfApp1.csproj|solutionrelative:triggers_in_wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146C4C58-9621-4AA4-8C51-D94F6350BC63}|Triggers_in_WpfApp1\\Triggers_in_WpfApp1.csproj|c:\\users\\\u043F\u043A\\downloads\\triggers_in_wpfapp1\\triggers_in_wpfapp1\\triggers_in_wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146C4C58-9621-4AA4-8C51-D94F6350BC63}|Triggers_in_WpfApp1\\Triggers_in_WpfApp1.csproj|solutionrelative:triggers_in_wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{146C4C58-9621-4AA4-8C51-D94F6350BC63}|Triggers_in_WpfApp1\\Triggers_in_WpfApp1.csproj|c:\\users\\\u043F\u043A\\downloads\\\u0442\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\\u0442\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\triggers_in_wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{146C4C58-9621-4AA4-8C51-D94F6350BC63}|Triggers_in_WpfApp1\\Triggers_in_WpfApp1.csproj|solutionrelative:triggers_in_wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,28 +18,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u043F\u043A\\Downloads\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u043F\u043A\\Downloads\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\Triggers_in_WpfApp1\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Triggers_in_WpfApp1\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u043F\u043A\\Downloads\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u043F\u043A\\Downloads\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\Triggers_in_WpfApp1\\MainWindow.xaml.cs",
               "RelativeToolTip": "Triggers_in_WpfApp1\\MainWindow.xaml.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAASwEYAAAANAAAA",
+              "ViewState": "AQIAACMBAAAAAAAAAAAAAC8BAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T19:21:52.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u043F\u043A\\Downloads\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u043F\u043A\\Downloads\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\Triggers_in_WpfApp1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Triggers_in_WpfApp1\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\\u043F\u043A\\Downloads\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\Triggers_in_WpfApp1\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u043F\u043A\\Downloads\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\\u0422\u0435\u043A\u0441\u0442\u043E\u0432\u044B\u0439 \u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\\Triggers_in_WpfApp1\\MainWindow.xaml",
               "RelativeToolTip": "Triggers_in_WpfApp1\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-05T15:13:50.446Z",
