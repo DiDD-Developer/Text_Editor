@@ -1,0 +1,158 @@
+﻿<Window x:Class="Triggers_in_WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Triggers_in_WpfApp1"
+        mc:Ignorable="d"
+        Title="Text Editor" Height="450" Width="1000" MinHeight="450" MinWidth="1000">
+    <Window.Resources>
+        <!-- Стили для кнопок -->
+        <Style x:Key="OpenButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="1" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LawnGreen"/>
+                                <Setter Property="Foreground" Value="Green"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="OrangeRed"/>
+                                <Setter Property="Foreground" Value="Yellow"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="CloseButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="1" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="BurlyWood"/>
+                                <Setter Property="Foreground" Value="DimGray"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="Pink"/>
+                                <Setter Property="Foreground" Value="HotPink"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="HoverButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="1" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkGray"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="Violet"/>
+                                <Setter Property="Foreground" Value="Purple"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5" Height="30" HorizontalAlignment="Center">
+            <Button Content="Открыть" Click="OpenButton_Click" Style="{StaticResource OpenButtonStyle}" Margin="10 0 0 0"/>
+            <Button Content="Очистить" Click="ClearButton_Click" Style="{StaticResource HoverButtonStyle}" Margin="10 0 0 0"/>
+            <Button x:Name="CloseButton" Content="Закрыть" Click="CloseButton_Click" Style="{StaticResource CloseButtonStyle}" Margin="10 0 0 0"/>
+
+            <!--Изменение стиля текста-->
+            <CheckBox x:Name="DeleteCheckBox" Content="Подчёркнутый" Checked="DeleteCheckBox_Checked" Unchecked="DeleteCheckBox_Unchecked" Margin="10 0 0 0" Height="19"/>
+            <CheckBox x:Name="BoldCheckBox" Content="Жирный" Checked="BoldCheckBox_Checked" Unchecked="BoldCheckBox_Unchecked" Margin="10 0 0 0" Height="21"/>
+            <CheckBox x:Name="ItalicCheckBox" Content="Курсив" Checked="ItalicCheckBox_Checked" Unchecked="ItalicCheckBox_Unchecked" Margin="10 0 0 0" Height="21"/>
+
+
+            <!--Изменение размера текста-->
+            <ComboBox x:Name="FontSizeComboBox" SelectionChanged="FontSizeComboBox_SelectionChanged" SelectedItem="0" Margin="10 0 0 0">
+                <ComboBoxItem Content="8"/>
+                <ComboBoxItem Content="9"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="11"/>
+                <ComboBoxItem Content="12"/>
+                <ComboBoxItem Content="14"/>
+                <ComboBoxItem Content="16"/>
+                <ComboBoxItem Content="18"/>
+                <ComboBoxItem Content="20"/>
+                <ComboBoxItem Content="22"/>
+                <ComboBoxItem Content="24"/>
+                <ComboBoxItem Content="26"/>
+                <ComboBoxItem Content="28"/>
+                <ComboBoxItem Content="36"/>
+                <ComboBoxItem Content="48"/>
+                <ComboBoxItem Content="64"/>
+                <ComboBoxItem Content="72"/>
+            </ComboBox>
+
+            <Button Content="Сохранить как PDF (Только Англ. язык)" Click="SaveAsPDF_Click" Style="{StaticResource HoverButtonStyle}" Margin="10 0 0 0"/>
+            <Button Content="Сохранить как TXT" Click="SaveAsTxt_Click" Style="{StaticResource HoverButtonStyle}" Margin="10 0 0 0"/>
+            <Button Content="Сохранить как DOCX" Click="SaveAsDocx_Click" Style="{StaticResource HoverButtonStyle}" Margin="10 0 0 0"/>
+
+        </StackPanel>
+
+        <TextBox Grid.Row="1" x:Name="TextBox1" Margin="5">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=TextBox1, Path=Text.Length}" Value="0">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="LightBlue" Offset="0"/>
+                                        <GradientStop Color="#FFBEFDFD" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+    </Grid>
+</Window>
